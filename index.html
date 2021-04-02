@@ -402,6 +402,18 @@
                         </li>
                 </div>
         </div>
+        <div class="footer_subscribe">
+            <b class="footer-subscribe-to__appeal">Подпишитесь на рассылку</b>
+            <form class="subscribe-form" action="#">
+                <input type="text">
+                <button class="footer_subscribe">
+                    <span >Подписаться</span>
+                    <svg>
+                        <use href="./images/icons.svg"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </footer>
     <!--MODAL-->
     <div class="backdrop" data-modal>
@@ -413,27 +425,27 @@
             </button>
             <div class="modal-form-wrapp">
                 <b class="modal-form-appeal">Оставьте свои данные, мы вам перезвоним</b>
-                <form class="modal-form" action="">
+                <form class="modal-form" action="#">
                     <label for="" class="modal-form-label">
                         <span class="modal-input-description">Имя</span>
-                        <input name="username"></input>
+                        <input name="user-name"></input>
                     </label>
                     <label for="" class="modal-form-label">
                         <span class="modal-input-description">Телефон</span>
-                        <input name></input>
+                        <input name="user-form" type="tel"></input>
                     </label>
                     <label for="" class="modal-form-label">
                         <span class="modal-input-description">Почта</span>
-                        <input type="email" name="email"></input>
+                        <input name="user-email" type="email"></input>
                     </label>
                     <label for="" class="textarea modal-form-label">
                         <span class="modal-input-description">Комментарий</span>
                         <textarea name="user-massege" class="textarea-wrapp" ></textarea>
                     </label>
                     <div class="modal-checkbox-wrapp">
-                        <span class="checkbox-description">
+                        <input type="text">
                         <input type="checkbox" class="modal-checkbox">
-                        </span>
+                
                     </div>
                     <button type="submit" class="modal-submit-button">
                     </button>
