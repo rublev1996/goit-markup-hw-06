@@ -982,6 +982,19 @@ ul{
     display: margin 0px auto;
 }
 
+.modal-form-appeal {
+    display: block;
+    margin-bottom: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
 .modal-form {
     display: flex;
     flex-direction: column;
@@ -1000,4 +1013,12 @@ ul{
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.input-space {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
 }

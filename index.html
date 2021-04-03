@@ -425,31 +425,35 @@
             </button>
             <div class="modal-form-wrapp">
                 <b class="modal-form-appeal">Оставьте свои данные, мы вам перезвоним</b>
-                <form class="modal-form" action="#">
-                    <label for="" class="modal-form-label">
-                        <span class="modal-input-description">Имя</span>
-                        <input name="user-name"></input>
-                    </label>
-                    <label for="" class="modal-form-label">
-                        <span class="modal-input-description">Телефон</span>
-                        <input name="user-form" type="tel"></input>
-                    </label>
-                    <label for="" class="modal-form-label">
-                        <span class="modal-input-description">Почта</span>
-                        <input name="user-email" type="email"></input>
-                    </label>
-                    <label for="" class="textarea modal-form-label">
-                        <span class="modal-input-description">Комментарий</span>
-                        <textarea name="user-massege" class="textarea-wrapp" ></textarea>
-                    </label>
-                    <div class="modal-checkbox-wrapp">
-                        <input type="text">
-                        <input type="checkbox" class="modal-checkbox">
-                
-                    </div>
-                    <button type="submit" class="modal-submit-button">
-                    </button>
-                </form>
+                <div class="modal-form-wrapp">
+                    <form class="modal-form" action="#">
+                        <label class="modal-form-label">
+                            <span class="modal-input-description">Имя</span>
+                            <input required name="user-name" class="input-space">
+                            
+                            </input>
+                        </label>
+                        <label class="modal-form-label">
+                            <span class="modal-input-description">Телефон</span>
+                            <input required pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" name="user-tel" type="tel" minlength="10" class="input-space"></input>
+                        </label>
+                        <label class="modal-form-label">
+                            <span required class="modal-input-description">Почта</span>
+                            <input name="user-email" type="email" class="input-space"></input>
+                        </label>
+                        <label class="textarea modal-form-label">
+                            <span required class="modal-input-description">Комментарий</span>
+                            <textarea name="user-massege" class="textarea-wrapp"></textarea>
+                        </label>
+                        <div class="modal-checkbox-wrapp">
+                            <input required type="text">
+                            <input type="checkbox" class="modal-checkbox">
+                    
+                        </div>
+                        <button type="submit" class="modal-submit-button">
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
