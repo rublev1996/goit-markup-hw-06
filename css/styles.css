@@ -34,6 +34,7 @@ ul{
 
 .body {
     font-family: Roboto;
+    height: 100vh;
 }
 
 .visually-hidden {
@@ -130,6 +131,7 @@ ul{
     --modal-submit-button-border:#2196F3;
     --modal-checkbox-description-border:#212121;
     --modal-checkbox-description-custom-checkbox:#2196F3;
+    --modal-checkbox-description-custom-checkbox-border:#2196F3;
 }
 
 /*HEARER*/
@@ -674,6 +676,7 @@ ul{
 }
 
 .hero {
+    display: block;
     max-width: 1600px;
     background-repeat: no-repeat;
     background-size:cover;
@@ -691,7 +694,7 @@ ul{
     flex-direction: column;
     padding-top: 200px;
     padding-bottom:200px;
-    width: 1600px;
+    max-width: 1600px;
 }
 
 .main-title{
@@ -1200,14 +1203,14 @@ ul{
 }
 
 .modal-checkbox-wrapp {
+    position: relative;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
 
 .modal-checkbox-description{
-    color: var(--modal-checkbox-description);
-    width: 400.62px;
+    padding-left: 23px;
     height: 24px;
     left: 612.38px;
     top: 658px;
@@ -1216,6 +1219,7 @@ ul{
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
+    color: var(--modal-checkbox-description);
 }
 
 .modal-checkbox-description-wrapper{
@@ -1225,8 +1229,11 @@ ul{
 }
 
 .modal-checkbox-description-wrapper::before{
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
     margin-bottom: 0px;
-    transition-property: background-color, backgoung-image;
+    transition-property: background-color, backgoung-image, outline-color;
     transition-duration:250ms ;
     display: block;
     content:"";
@@ -1243,6 +1250,7 @@ ul{
     background-position: 50% 50%;
     background-color: var(--modal-checkbox-description-custom-checkbox);
     background-image: url(../images/check.svg);
+    outline-color: var(--modal-checkbox-description-custom-checkbox-border);
 }
 
 
