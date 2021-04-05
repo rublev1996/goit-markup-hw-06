@@ -501,6 +501,7 @@ ul{
 }
 
 .footer-subscribe-button-svg {
+    max-height: 30px;
     display: block;
 }
 
